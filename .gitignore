@@ -1,0 +1,16 @@
+*.backup
+*.bin
+*.class
+.DS_Store
+*.dSYM
+*.o
+*.a
+*.pyc
+*.swp
+buck-out
+.buckd
+.idea
+*.iml
+.ninja_deps
+.ninja_log
+
