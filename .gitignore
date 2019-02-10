@@ -1,5 +1,3 @@
-*.backup
-*.bin
 *.class
 .DS_Store
 *.dSYM
@@ -7,10 +5,4 @@
 *.a
 *.pyc
 *.swp
-buck-out
-.buckd
-.idea
-*.iml
-.ninja_deps
-.ninja_log
 
