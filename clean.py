@@ -32,8 +32,10 @@ def find_glob(pattern_list):
 def find_binary(directory):
     res = []
     for f in os.listdir(directory):
-        if os.path.isfile(f) and len(os.path.splitext(f)[1]) == 0 and \
-                (os.stat(f).st_mode & stat.S_IEXEC) != 0:
+        if (os.path.isfile(f)
+                and len(os.path.splitext(f)[1]) == 0
+                and (os.stat(f).st_mode & stat.S_IEXEC) != 0
+                and f not in ['copy_sln']):
             res.append(f)
     return res
 
