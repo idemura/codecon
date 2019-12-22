@@ -1,0 +1,31 @@
+#! /bin/bash
+
+cat > "$1.cc" <<- END_TEXT
+#include <algorithm>
+#include <cmath>
+#include <cstdint>
+#include <cstdio>
+#include <cstring>
+#include <map>
+#include <unordered_map>
+#include <string>
+#include <vector>
+#include <utility>
+
+#include "log.h"
+
+using namespace std;
+
+using i32 = int32_t;
+using i64 = int64_t;
+using pii = std::pair<int, int>;
+
+int main(int argc, char **argv) {
+    initLog(argc, argv);
+    return 0;
+}
+END_TEXT
+
+cat > "$1.in" <<- END_TEXT
+# input data
+END_TEXT
